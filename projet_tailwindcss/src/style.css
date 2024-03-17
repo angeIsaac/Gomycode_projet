@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles here */
+
+li{
+    font-size: 17px;
+}
+.btnA{
+    @apply 
+    inline-flex items-center px-4 py-2 
+    border text-base font-medium 
+    rounded-md text-white ml-5;
+}
+
+.bg-image{
+    @apply bg-cover bg-center w-full h-auto absolute top-0 left-0 right-0 bottom-0 bg-no-repeat;
+    background-image: url('../image/19475 copie.jpg');
+    z-index: -1;
+}
+.text-3xl{
+    font-size: 46px;
+}
+.bgperso{
+    @apply bg-blue-100
+}
