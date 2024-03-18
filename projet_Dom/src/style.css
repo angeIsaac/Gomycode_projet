@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Your custom styles... */
+
+.heroique{
+    @apply bg-center bg-cover bg-no-repeat;
+    background-image: url("../image/2327.jpg");
+}
+ .link{
+    @apply text-lg py-2 hover:border-b hover:border-orange-600 hover:text-orange-400 ml-3;
+ }
