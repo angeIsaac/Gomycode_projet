@@ -10,4 +10,12 @@
 }
  .link{
     @apply text-lg py-2 hover:border-b hover:border-orange-600 hover:text-orange-400 ml-3;
- }
+}
+
+.las:hover{
+    transform: scale(1.2);
+  
+}
+.las{
+     transition: transform .5s ease; 
+}

@@ -78,3 +78,5 @@ function moins3(){
 qte_2.addEventListener('click', qteCount2);
 qte_1.addEventListener('click', qteCount);
 qte_3.addEventListener('click', qteCount3);
+
+
