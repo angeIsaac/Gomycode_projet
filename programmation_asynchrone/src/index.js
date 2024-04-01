@@ -104,5 +104,18 @@ let iterateWithAsyncAwai = async (tab) => {
     };
 }
 
-iterateWithAsyncAwai([1, 2, 3, 4, 5]);
+// iterateWithAsyncAwai([1, 2, 3, 4, 5]);
 
+
+
+/* tache 02 : En attente d’un appel : Créez une fonction asynchrone awaitCall qui simule la récupération 
+de données à partir d’une API. Utilisez await pour attendre la réponse de l’API, puis consigner les données. 
+*/
+
+let awaitCall = async () => {
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    let data = await response.json();
+    console.log(data);
+}
+
+// awaitCall();
