@@ -85,3 +85,24 @@ let parallelCalls = ()=>{
     });
 }
 // parallelCalls();
+
+/* Tâche 01 : 
+Tâche 01 :
+
+Itération avec Async/Await : Écrivez une fonction asynchrone iterateWithAsyncAwait qui prend un tableau de valeurs et enregistre 
+chaque valeur avec un délai de 1 seconde entre les journaux.
+*/
+
+let iterateWithAsyncAwai = async (tab) => {
+    for(let i of tab){
+        await new Promise((re)=>{
+            setTimeout(()=>{
+                console.log(i);
+                re();
+            }, 1000);
+        });
+    };
+}
+
+iterateWithAsyncAwai([1, 2, 3, 4, 5]);
+
