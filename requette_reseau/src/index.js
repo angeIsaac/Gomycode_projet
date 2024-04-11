@@ -54,7 +54,6 @@ btn.addEventListener("click", (e) => {
             return reponse.json();
         })
         .then(data => {
-            console.log(data);
             temperature(data);
             date();
         })  
