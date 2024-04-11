@@ -24,7 +24,7 @@ function date (){
 }
 
 function temperature(data){
-    temp.textContent           = Math.round(data.main.temp) + " C";
+    temp.textContent           = Math.round(data.main.temp) + " °C";
     icon.innerHTML             = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="" class="taile"/>` ;
     nomVille.innerText         = `ville: ${data.name}`;
     description.innerHTML      = data.weather[0].description;
