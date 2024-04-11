@@ -10,6 +10,19 @@ let visibilte   = document.getElementById("visibilite");
 
 let url = "";
 
+function date (){
+    let date = new Date();
+    let jours = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"];
+    let mois = ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre", "Decembre"];
+    let jour = jours[date.getDay()];
+    mois = mois[date.getMonth()];
+    let annee = date.getFullYear();
+    let heure = date.getHours();
+    let minute = date.getMinutes();
+    document.getElementById("heure").innerText = `${jour} ${date.getDate()} ${mois} ${annee}\n ${heure}:${minute}`;
+
+}
+
 function temperature(data){
     temp.textContent           = Math.round(data.main.temp) + " C";
     icon.innerHTML             = `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="" class="taile"/>` ;
@@ -43,6 +56,7 @@ btn.addEventListener("click", (e) => {
         .then(data => {
             console.log(data);
             temperature(data);
+            date();
         })  
 });
 
